@@ -42,7 +42,7 @@ Console.Write("enter the epsilon = ");
             int n = 1;
             while (true)
             {
-                double result = Math.Abs((1 / f) * Math.Pow((x - 1) /( x + 1) ,(2 * n - 1)));
+                double Math.Abs(result) = (1 / f) * Math.Pow((x - 1) /( x + 1) ,(2 * n - 1));
                 if(result >= e)
                 {
                     sum += result;
