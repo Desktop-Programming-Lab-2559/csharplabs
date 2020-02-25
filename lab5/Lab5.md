@@ -3,12 +3,14 @@
 Дане дійсне число __a__ і натуральне число __n__. Обчислити __a(a+1)...(a+n-1)__.
 ```cs
 Console.Write("a = ");
+            Console.Write("a = ");
             double a = Convert.ToDouble(Console.ReadLine());
             Console.Write("n = ");
+            double p = 1;
             int n = Convert.ToInt32(Console.ReadLine());
             for (int i = 1; i < n; i++)
-                a *= (a + 1);
-            Console.WriteLine($"example = {a}")
+                p *= (a + i);
+            Console.WriteLine($"example = {a}");
 ```
 ## Завдання 2
 Дано __n ∈ ℕ__. Побудувати алгоритм для визначення кількості цифр у цьому числі.
@@ -57,16 +59,14 @@ Console.Write("enter the epsilon = ");
 ## Завдання 4
 Нехай __х0 = 1, хі = х(і-1)+ 2і__, де __і = 1,2,...__.Визначити __х10__.
 ```cs
-Console.WriteLine("n = 10 ");
-            int n  = Convert.ToInt32(Console.ReadLine());
-            
+     
             double x0 = 1;
-            double xi = 10;
-            for (int i = 1; i <= n; i++)
+            double xi = 0;
+            
+            for (int i = 1; i <= 10; i++)
             { 
                 xi = x0 + i * 2;
                 x0 = xi;
             }
              Console.WriteLine("xi = {0}", xi);
-            }
 ```
