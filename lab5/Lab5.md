@@ -10,7 +10,7 @@ Console.Write("a = ");
             int n = Convert.ToInt32(Console.ReadLine());
             for (int i = 1; i < n; i++)
                 p *= (a + i);
-            Console.WriteLine($"example = {a}");
+            Console.WriteLine($"example = {p}");
 ```
 ## Завдання 2
 Дано __n ∈ ℕ__. Побудувати алгоритм для визначення кількості цифр у цьому числі.
