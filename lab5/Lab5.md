@@ -8,7 +8,7 @@ Console.Write("a = ");
             Console.Write("n = ");
             double p = 1;
             int n = Convert.ToInt32(Console.ReadLine());
-            for (int i = 1; i < n; i++)
+            for (int i = 0; i < n; i++)
                 p *= (a + i);
             Console.WriteLine($"example = {p}");
 ```
