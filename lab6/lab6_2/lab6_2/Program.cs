@@ -13,17 +13,18 @@ namespace lab6_2
             Console.Write("n = ");
             int n = Convert.ToInt32(Console.ReadLine());
             double ai = 0;
-            double a1 = x;
-            double a2 = x;
-            double a3 = y;
+            double ai_2 = x;
+            double ai_3 = x;
+            double ai_1 = y;
+            double[] arr = new double[n];
             for (int i = 4; i <= n; i++)
             {
 
-                ai = a2 + (a3 / Math.Pow(2, (i - 1)) * a1);
-                a1 = a2;
-                a2 = a3;
-                a3 = ai;
-                Console.WriteLine(ai);
+                ai = ai_2 + (ai_1 / Math.Pow(2, (i - 1)) * ai_3);
+                ai_3 = ai_2;
+                ai_2 = ai_1;
+                ai_1 = ai;
+                Console.WriteLine("arr[{0}] = {1:f2}",i,ai);
             }
 
         }
