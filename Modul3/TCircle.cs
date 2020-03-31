@@ -25,7 +25,7 @@ namespace Modul
             
         public override string ToString()
         {
-            return $"{R}";
+            return $"r:{R}";
         }
         public TCircle(TCircle b)
         {
@@ -39,7 +39,7 @@ namespace Modul
         {
             return 2 *r* Math.PI ;
         }
-        /*public static bool operator ==(TCircle r1, TCircle r2)
+        public static bool operator ==(TCircle r1, TCircle r2)
         {
             return r1.R == r2.R ;
         }
@@ -47,7 +47,7 @@ namespace Modul
         public static bool operator !=(TCircle r1, TCircle r2)
         {
             return !(r1 == r2);
-        }*/
+        }
         public static TCircle operator +(TCircle c1, TCircle c2)
         {
             return new TCircle(c1.r + c2.r);

@@ -14,7 +14,7 @@ namespace Modul
             {
                 if (value < 0)
                     throw new Exception("Side must be positive number");
-                H = value;
+                h = value;
             }
         }
         public TCylinder(double r, double h) : base(r)
@@ -23,7 +23,7 @@ namespace Modul
         }
         public override string ToString()
         {
-            return $"{R},{h}";
+            return $"r:{R},h:{h}";
         }
         new public double Square()
         {
